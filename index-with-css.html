@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap and Jquery-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!--my js-->
+    <script src="./js/mycode.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Launch Modal</h3>
+        <p>This example will launch a modal when you click on the button below.</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#skipNadDialog">Show modal
+        </button>
+        <button type="button" class="btn btn-secondary">Javascript show modal</button>
+
+        <div class="modal fade" id="skipNadDialog" role="dialog">
+            <!-- We can implement some CSS elements
+                    Classes: modal-lg: means that we're going to toggle LARGE modal
+                             modal-sm: means that we're going to toggle SMALL modal-->
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Kindly select your reason</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Reasons:</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
